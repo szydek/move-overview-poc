@@ -1,6 +1,6 @@
-# MOVE OverView
+# Move Over
 
-A web dashboard for [Ableton Move](https://www.ableton.com/en/move/) that runs **directly on the device** — a second screen for your Move, accessible from any browser on the same WiFi network.
+A "second screen" web dashboard for [Ableton Move](https://www.ableton.com/en/move/) that runs **directly on the device** — accessible from any browser on the same WiFi network, no laptop required after setup.
 
 Built as a proof of concept for integrating Move set management into [Schwung](https://github.com/charlesvestal/schwung). Runs as a standalone Flask app on port 808 alongside Schwung (port 7700).
 
