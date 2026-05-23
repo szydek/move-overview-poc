@@ -301,11 +301,8 @@
                     mf.style.background = d.mem_pct > 80 ? '#f7238d' : d.mem_pct > 60 ? '#ffba73' : '#7D57E5';
                 }
                 if (d.load_1 != null) {
-                    const cores = d.cpu_count || 1;
-                    const pct = Math.min(100, Math.round(d.load_1 / cores * 100));
-                    const color = pct > 80 ? '#f7238d' : pct > 50 ? '#ffba73' : '#4dd9d9';
                     document.getElementById('load-text').innerHTML =
-                        `<span style="color:${color}">${d.load_1.toFixed(2)}</span> / ${d.load_5.toFixed(2)} / ${d.load_15.toFixed(2)} &nbsp;<span style="color:#666;font-size:12px;">(1m/5m/15m)</span>`;
+                        `${d.load_1.toFixed(2)} / ${d.load_5.toFixed(2)} / ${d.load_15.toFixed(2)} &nbsp;<span style="color:#666;font-size:12px;">(1m/5m/15m)</span>`;
                 }
             } catch (e) {}
         }
